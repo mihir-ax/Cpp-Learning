@@ -45,25 +45,48 @@ void upperDiamond(int n)
   }
 }
 
+// void lowerDiamond(int n)
+// {
+//   for (int i = n - 1; i >= 1; i--)
+//   {
+//     for (int j = 1; j <= n * 2; j++)
+//     {
+//       if ((j <= n - i) && (!(j > n - i)))
+//       {
+//         cout << "  ";
+//       }
+//       else if (j == n - i + 1)
+//       {
+//         cout << "* ";
+//       }
+//       else if ((j > n - i + 1) && (j < n + i - 1))
+//       {
+//         cout << "  ";
+//       }
+//       else if (j == n + i - 1)
+//       {
+//         cout << "* ";
+//       }
+//     }
+//     cout << "\n";
+//   }
+// }
+
+
+// UPPER lowerDiamond function IS CORRECT BUT LONG !!
+// MORE EFFICIENT !!
+
 void lowerDiamond(int n)
 {
   for (int i = n - 1; i >= 1; i--)
   {
     for (int j = 1; j <= n * 2; j++)
     {
-      if ((j <= n - i) && (!(j > n - i)))
+      if ((j <= n - i) && (!(j > n - i)) || (j > n - i + 1) && (j < n + i - 1))
       {
         cout << "  ";
       }
-      else if (j == n - i + 1)
-      {
-        cout << "* ";
-      }
-      else if ((j > n - i + 1) && (j < n + i - 1))
-      {
-        cout << "  ";
-      }
-      else if (j == n + i - 1)
+      else if ((j == n - i + 1) || (j == n + i - 1))
       {
         cout << "* ";
       }
