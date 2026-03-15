@@ -16,14 +16,19 @@ int main()
   // cout << a + b << endl;
   // cout << *x + *y;
 
+
+  // comeback !!
+  
   int x, y;
   cout << "Enter the Fist Number : ";
   cin >> x;
   cout << "Enter the Second Number : ";
   cin >> y;
 
-  int *xx = &x;
-  int *yy = &y;
+  int *xx = &x, *yy = &y;
+
+  // int *xx = &x;
+  // int *yy = &y;
 
   cout << "Sum of those two numbers is : " << *xx + *yy;
 }
