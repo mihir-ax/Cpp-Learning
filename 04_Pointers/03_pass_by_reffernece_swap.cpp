@@ -18,13 +18,12 @@ using namespace std;
 //   cout << num1 << " " << num2;
 // }
 
-
 // one more way seedha adress hi badal do dono ka !!
-void swaap(int &a, int &b)
+void swaap(int &x, int &y)
 {
-  int temp = a;
-  a = b;
-  b = temp;
+  int temp = x;
+  x = y;
+  y = temp;
 }
 
 int main()
