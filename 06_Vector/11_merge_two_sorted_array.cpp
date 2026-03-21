@@ -13,17 +13,17 @@ int main()
 
   while (k < v3.size())
   {
-    if (v1.size() == 0)
+    if ((v1.size() == 0) || (i >= v1.size()))
     {
       v3[k] = v2[j];
       j++;
       k++;
     }
-    else if (v2.size() == 0)
+    else if ((v2.size() == 0) || (j >= v2.size()))
     {
       v3[k] = v1[i];
       i++;
-      j++;
+      k++;
     }
     else
     {
@@ -41,7 +41,10 @@ int main()
       }
     }
   }
-
+  if (v3.size() == 0)
+  {
+    cout << 0;
+  }
   for (int m = 0; m < v3.size(); m++)
   {
     cout << v3[m] << " ";
