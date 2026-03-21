@@ -48,6 +48,8 @@ int main()
       int temp = *f;
       *f = *l;
       *l = temp;
+      i++;
+      j--;
     }
   }
   for (int i = 0; i < v.size(); i++)
