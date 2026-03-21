@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-  vector<int> v = {1, 1, 1, 1, 1, 0, 0};
+  vector<int> v = {1, 1, 0, 1, 0, 1, 1, 0};
 
   // ---------------
   //   Method - 1
@@ -41,6 +41,8 @@ int main()
       i++;
     if (v[j] == 1)
       j--;
+    if (i < j)
+      break;
     if ((v[i] == 1) && (v[j] == 0))
     {
       int *f = &v[i];
