@@ -82,8 +82,6 @@ int main()
       // i++;
       // k--;
     }
-    cout << "i = " << i << " j = " << j << " k = " << k;
-    cout << endl;
   }
   for (int m = 0; m <= v.size() - 1; m++)
   {
