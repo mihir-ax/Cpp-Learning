@@ -14,13 +14,28 @@ int main()
 
   while (k >= 0)
   {
-    if (nums1[i] >= nums2[j])
+    if (i >= 0 && j >= 0)
+    {
+      if (nums1[i] >= nums2[j] && i >= 0)
+      {
+        nums1[k] = nums1[i];
+        k--;
+        i--;
+      }
+      else if (nums2[j] >= nums1[i] && j >= 0)
+      {
+        nums1[k] = nums2[j];
+        k--;
+        j--;
+      }
+    }
+    else if (j < 0)
     {
       nums1[k] = nums1[i];
       k--;
       i--;
     }
-    else if (nums2[j] >= nums1[i])
+    else if (i < 0)
     {
       nums1[k] = nums2[j];
       k--;
