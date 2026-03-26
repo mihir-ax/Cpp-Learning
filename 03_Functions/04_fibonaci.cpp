@@ -12,7 +12,7 @@ void fibonaci(int n, int i = 0, int j = 0)
     cout << 1;
     i++;
     j = 1;
-  }
+  } 
   else
   {
     int temp = i;
